@@ -1,37 +1,89 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="gr">
     <meta charset="UTF-8">
     <title>HTML5 Navigation Bar Example - Example 1</title>
-    <link href="style2.css" rel="stylesheet"/>
+<!--    <link href="style2.css" rel="stylesheet"/>-->
+<style>
+nav.ngnav {
+    background-color: #333;
+    border: 1px solid #333;
+    color: #fff;
+    display: block;
+    margin: 0;
+    overflow: hidden;
+}
+nav.ngnav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav.ngnav ul li {
+    margin: 0;
+/*    display: inline-block;*/
+	display: block;
+    list-style-type: none;
+    transition: all 0.2s;
+}
+
+nav.ngnav > ul > li > a {
+    color: #aaa;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+
+}
+
+nav.ngnav li > ul{
+    display : none;
+    margin-top:-48px;
+    margin-left:220px;
+    background-color: #bbb;
+
+}
+
+nav.ngnav li > ul li{
+    display: block;
+}
+
+nav.ngnav  li > ul li a {
+    color: #111;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+nav.ngnav li:hover {
+    background-color: #666;
+}
+nav.ngnav li:hover > ul{
+    position:absolute;
+    display : block;
+}</style>
 </head>
 <body>
-<nav>
+<nav class="ngnav">
     <ul>
         <li>
-            <a href="home.html">Home</a>
-            <ul>
-                <li><a href="presentation.html">presentation</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
+            <a  href="peri.html">Περί</a>
         </li>
+        <li><a href="foreas.html">Ο φορέας</a></li>
+
+        <li><a href="platform.html">Η πλατφόρμα OpenEdx</a></li>
+         <li><a href="shop.html">Οι "συγγραφείς"</a></li>
         <li>
-            <a href="blog.html">Blog</a>
+            <a href="shop.html">Το προσωπικό</a>
             <ul>
-                <li><a href="one.html">One</a></li>
-                <li><a href="two.html">Two</a></li>
-                <li><a href="three.html">Three</a></li>
+                <li><a href="candy.html">Στέφανος Τραχανάς</a></li>
+                <li><a href="chocolate.html">Νίκος Γκικόπουλος</a></li>
             </ul>
         </li>
-        <li>
-            <a href="shop.html">Shop</a>
-            <ul>
-                <li><a href="candy.html">candy</a></li>
-                <li><a href="chocolate.html">chocolate</a></li>
-                <li><a href="icecream.html">ice cream</a></li>
-            </ul>
-        </li>
-        <li><a href="news.html">News</a></li>
+        <li><a href="news.html">Οι πόροι</a></li>
+        <li><a href="morenews.html">Οι εθελοντές</a></li>
+        <li><a href="extra.html">Οι "υποδομές"</a></li>
+        <li><a href="ekpextra.html">Εκπαιδευτική έρευνα</a></li>
     </ul>
 </nav>
 </body>
