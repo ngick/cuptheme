@@ -1,11 +1,12 @@
-.xmodule_display.xmodule_HtmlModule table td{
-border: 0px solid #ccc;
-vertical-align: middle;
-padding:5px;
-}
-
 h2{
 text-transform:none !important;
+font-family: "Open Sans";
+}
+/*the following is for moving the dashboard setting to the right*/
+.dashboard .profile-sidebar{
+float: right;
+width: 23%;
+margin-right: 0px;
 }
 .dashboard .profile-sidebar .user-info>ul li span.title {
 text-transform:none !important;
@@ -16,23 +17,6 @@ header.global-new .nav-courseware div{
 .view-register .login aside .cta h3, .login aside .cta .view-register h3, .view-register .register aside .cta h3, .register aside .cta .view-register h3, .view-register .passwordreset aside .cta h3, .passwordreset aside .cta .view-register h3, .view-register #forgot-password-modal #password-reset aside .cta h3, #forgot-password-modal #password-reset aside .cta .view-register h3, .view-register .login .status .message-title, .login .status .view-register .message-title, .view-register .register .status .message-title, .register .status .view-register .message-title, .view-register .passwordreset .status .message-title, .passwordreset .status .view-register .message-title, .view-register #forgot-password-modal #password-reset .status .message-title, #forgot-password-modal #password-reset .status .view-register .message-title, .view-login .login aside .cta h3, .login aside .cta .view-login h3, .view-login .register aside .cta h3, .register aside .cta .view-login h3, .view-login .passwordreset aside .cta h3, .passwordreset aside .cta .view-login h3, .view-login #forgot-password-modal #password-reset aside .cta h3, #forgot-password-modal #password-reset aside .cta .view-login h3, .view-login .login .status .message-title, .login .status .view-login .message-title, .view-login .register .status .message-title, .register .status .view-login .message-title, .view-login .passwordreset .status .message-title, .passwordreset .status .view-login .message-title, .view-login #forgot-password-modal #password-reset .status .message-title, #forgot-password-modal #password-reset .status .view-login .message-title, .view-passwordreset .login aside .cta h3, .login aside .cta .view-passwordreset h3, .view-passwordreset .register aside .cta h3, .register aside .cta .view-passwordreset h3, .view-passwordreset .passwordreset aside .cta h3, .passwordreset aside .cta .view-passwordreset h3, .view-passwordreset #forgot-password-modal #password-reset aside .cta h3, #forgot-password-modal #password-reset aside .cta .view-passwordreset h3, .view-passwordreset .login .status .message-title, .login .status .view-passwordreset .message-title, .view-passwordreset .register .status .message-title, .register .status .view-passwordreset .message-title, .view-passwordreset .passwordreset .status .message-title, .passwordreset .status .view-passwordreset .message-title, .view-passwordreset #forgot-password-modal #password-reset .status .message-title, #forgot-password-modal #password-reset .status .view-passwordreset .message-title{
   text-transform:none !important;
 
-}
-
-
-td.footer1
-{
-text-align:center;
-color:#888844;
-font-style:italic;
-font-weight:bold;
-font-size:20px;
-border-style:solid;
-border-radius:5px;
-border-width:10px;
-border-color:#c83d58;
-border-top:0px solid #c83d58; 
-border-left:0px solid #c83d58;
-border-right:0px solid #c83d58;
 }
 
 img.rs
@@ -50,7 +34,7 @@ white-space: nowrap;
 
 
 /*ngick the following are corrections to the openedx main theme*/
-header.global.slim h2 {
+/*header.global.slim h2 {
 display: block;
 width: 700px;
 float: left;
@@ -66,7 +50,6 @@ white-space: nowrap;
 text-overflow: ellipsis;
 overflow: hidden;
 }
-
 
 header.global-new.slim h2 {
 display: block;
@@ -83,18 +66,35 @@ text-shadow: 0 1px 0 #fff;
 white-space: nowrap;
 text-overflow: ellipsis;
 overflow: hidden;
+}*/
+
+/*the followin are for the startup screen the white box*/
+.home>header .outer-wrapper{
+padding: 200px 0px 0px!important;
+width: 100%; /*this can be less and still centered*/
+max-width: 600px;
+min-width: 500px;
 }
 .home>header .title {
-  min-height: 130px;
-  margin-left: 100px;
-  width: 71%;
+  min-height: 0px;
+  margin-left: 0px; /*exei na kanei me to pio katw .play-intro */
+  width: 100%; /*not centered leave it 100%*/
+}
+.home>header .title>hgroup {
+width: 100%; /*not centered leave it 100%*/
+text-align:center;
+padding:20px 10px;
+}
+.home>header .title>hgroup h1{
+text-align:center;
+font-size:25px;
 }
 .home>header .media {
   width:142px;
   height:130px;
 }
 .home>header .media .hero .play-intro {
-  display:none;
+/*  display:none;*/
 }
 /*the following 2 are for middle alignment of radioboxes and checkboxes*/
 .xmodule_display.xmodule_CapaModule div.problem .choicegroup input[type="radio"]{
@@ -107,4 +107,97 @@ overflow: hidden;
 .dashboard .my-courses .course .info > hgroup h3 a, .dashboard .my-courses .course .info > hgroup h3 span{
 font-weight:400!important;
 font-size:30px!important;
+}
+/* same but on news title */
+h1.top-header, div.course-wrapper section.course-content .vert-mod > div header, div.info-wrapper section.updates > h1, div.syllabus h1, .profile-wrapper .course-info header, div.gradebook-wrapper section.gradebook-content h1, div.static_tab_wrapper h1, .instructor-dashboard-wrapper section.instructor-dashboard-content h1, .instructor-dashboard-content-2 h1{
+font-weight:400!important;
+}
+/*same on progress title*/
+.profile-wrapper .course-info header h1{
+font-weight:400!important;
+}
+/*correct weight and font in Registration form*/
+.view-register .introduction header .title .title-super, .view-register .introduction header .title .title-sub, .view-login .introduction header .title .title-super, .view-login .introduction header .title .title-sub, .view-passwordreset .introduction header .title .title-super, .view-passwordreset .introduction header .title .title-sub{
+text-transform:none !important;
+font-weight:400!important;
+}
+.view-register .login form .instructions, .login form .view-register .instructions, .view-register .register form .instructions, .register form .view-register .instructions, .view-register .passwordreset form .instructions, .passwordreset form .view-register .instructions, .view-register #forgot-password-modal #password-reset form .instructions, #forgot-password-modal #password-reset form .view-register .instructions, .view-login .login form .instructions, .login form .view-login .instructions, .view-login .register form .instructions, .register form .view-login .instructions, .view-login .passwordreset form .instructions, .passwordreset form .view-login .instructions, .view-login #forgot-password-modal #password-reset form .instructions, #forgot-password-modal #password-reset form .view-login .instructions, .view-passwordreset .login form .instructions, .login form .view-passwordreset .instructions, .view-passwordreset .register form .instructions, .register form .view-passwordreset .instructions, .view-passwordreset .passwordreset form .instructions, .passwordreset form .view-passwordreset .instructions, .view-passwordreset #forgot-password-modal #password-reset form .instructions, #forgot-password-modal #password-reset form .view-passwordreset .instructions{
+font-weight:400!important;
+}
+/*the followin is for deleting the plus sympol in login form button*/
+.orn-plus
+{
+display:none!important;
+}
+/*the following are for fixing the top transparent header*/
+header.global{
+/*height:120px;*/
+background: white; /*was: rgba(224, 217, 225, 0.75) none repeat scroll 0% 0%*/
+border-bottom: 4px solid #4BB4FB; 
+}
+header.global.slim{
+background: white;
+}
+/*.home > header{
+margin-top: -140px!important;
+}
+h1.logo{
+margin: -18px 30px 0px 0px!important;
+}
+/*header.global .nav-global{
+margin-top: 30px;
+}
+header.global .nav-courseware{
+margin-top: 23px!important;
+}*/
+
+/*the following are again for top logo but the thin one*/
+/*header.global.slim h1.logo img {
+height: 60px!important;
+margin-top: 8px!important;
+}
+header.global.slim h2 {
+width: auto;
+margin-right: 15px;
+}
+.find-courses header.search, .university-profile header.search{
+margin-top: -140px;
+}
+.course-info header.course-profile {
+margin-top: -125px;
+}*/
+/*the following is for the title of the course on top of each page*/
+
+header.global.slim h2 {
+width: auto;
+margin-right: 15px;
+}
+/* the following is the size of title of the course in course details page*/
+.course-info header.course-profile .intro-inner-wrapper .intro > hgroup h1{
+font-size: 27px;
+}
+/*The following are for the color in footer */
+.wrapper-footer{
+background: white none repeat scroll 0% 0%!important; /*it was: background: #E3DDE4 none repeat scroll 0% */
+}
+.wrapper-footer footer .references{
+width: auto;
+float: right;
+}
+.wrapper-footer footer .colophon {
+float: left;
+width: auto;
+}
+
+/* this is for popup windows the X wasn't working */
+.modal .inner-wrapper .close-modal, .leanModal_box .inner-wrapper .close-modal{
+z-index:20;
+}
+/*the following is for disapearing the name of the user and the ability to change the name*/
+li.info--username{
+display:none;
+}
+/*the following is for correcting case in big buttons*/
+input[type="submit"], input[type="button"], button, .button{
+  text-transform:none !important;
 }
