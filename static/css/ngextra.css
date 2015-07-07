@@ -70,7 +70,7 @@ overflow: hidden;
 
 /*the followin are for the startup screen the white box*/
 .home>header .outer-wrapper{
-padding: 200px 0px 0px!important;
+padding: 190px 0px 0px!important;
 width: 100%; /*this can be less and still centered*/
 max-width: 600px;
 min-width: 500px;
@@ -90,11 +90,58 @@ text-align:center;
 font-size:25px;
 }
 .home>header .media {
-  width:142px;
-  height:130px;
+/*  width:142px;
+  height:130px;*/
+}
+
+/*the following is for fixing the width of the background image in header*/
+.home > header{
+max-width:1200px;
+margin-left:auto;
+margin-right:auto;
+margin-top:0px;
+}
+
+.find-courses header.search, .university-profile header.search{
+max-width:1200px;
+margin-left:auto;
+margin-right:auto;
+margin-top:0px;
+}
+.find-courses header.search .inner-wrapper, .university-profile header.search .inner-wrapper{
+padding-top:150px;
+}
+.course-info header.course-profile{
+max-width:1200px;
+margin-left:auto;
+margin-right:auto;
+}
+.course-info header.course-profile .intro-inner-wrapper{
+max-width:95%;
 }
 .home>header .media .hero .play-intro {
 /*  display:none;*/
+}
+/*the following are for displaying the image of each course just bellow the title in home page*/
+.highlighted-courses .courses .course .info .cover-image, .find-courses .courses .course .info .cover-image{
+/*height:150px;*/
+}
+.highlighted-courses .courses .course .info, .find-courses .courses .course .info{
+top:50px;
+transition: 1000000s;
+}a
+.highlighted-courses .courses .course .meta-info, .find-courses .courses .course .meta-info{
+display:none;
+}
+.highlighted-courses .courses .course .info .cover-image img, .find-courses .courses .course .info .cover-image img{
+min-height:auto;
+}
+
+.highlighted-courses .courses .course .inner-wrapper, .find-courses .courses .course .inner-wrapper{
+height:400px;
+}
+.highlighted-courses .courses .course .info .desc, .find-courses .courses .course .info .desc{
+font-size:12px;
 }
 /*the following 2 are for middle alignment of radioboxes and checkboxes*/
 .xmodule_display.xmodule_CapaModule div.problem .choicegroup input[type="radio"]{
@@ -124,7 +171,7 @@ font-weight:400!important;
 .view-register .login form .instructions, .login form .view-register .instructions, .view-register .register form .instructions, .register form .view-register .instructions, .view-register .passwordreset form .instructions, .passwordreset form .view-register .instructions, .view-register #forgot-password-modal #password-reset form .instructions, #forgot-password-modal #password-reset form .view-register .instructions, .view-login .login form .instructions, .login form .view-login .instructions, .view-login .register form .instructions, .register form .view-login .instructions, .view-login .passwordreset form .instructions, .passwordreset form .view-login .instructions, .view-login #forgot-password-modal #password-reset form .instructions, #forgot-password-modal #password-reset form .view-login .instructions, .view-passwordreset .login form .instructions, .login form .view-passwordreset .instructions, .view-passwordreset .register form .instructions, .register form .view-passwordreset .instructions, .view-passwordreset .passwordreset form .instructions, .passwordreset form .view-passwordreset .instructions, .view-passwordreset #forgot-password-modal #password-reset form .instructions, #forgot-password-modal #password-reset form .view-passwordreset .instructions{
 font-weight:400!important;
 }
-/*the followin is for deleting the plus sympol in login form button*/
+/*the following is for deleting the plus sympol in login form button*/
 .orn-plus
 {
 display:none!important;
@@ -159,9 +206,6 @@ margin-top: 8px!important;
 header.global.slim h2 {
 width: auto;
 margin-right: 15px;
-}
-.find-courses header.search, .university-profile header.search{
-margin-top: -140px;
 }
 .course-info header.course-profile {
 margin-top: -125px;
