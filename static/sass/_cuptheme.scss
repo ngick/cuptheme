@@ -10,8 +10,9 @@
 //-----------------
 
 //Main Color Variables
-$main-color: #0A4A67;
+$main-color: #0065a4; //was #0A4A67
 $dark-color: #1790C7; //Link Color
+//$main-color: $dark-color;
 $light-color: #f4e00c; //Selected Header BG Color, ie. calendar        ***Custom, not from palette***
 $bg-color: #f7fe81; //Selected Content BG Color, ie. calendar          ***Custom, not from palette***
 
@@ -185,7 +186,7 @@ $footer_margin: ($baseline/4) 0;
 //-----------------
 //  CSS BG Images
 //-----------------
-$homepage-bg-image: url('../themes/cuptheme/images/rosetta2.jpg');
+$homepage-bg-image: url('../themes/cuptheme/images/mathesisnewbg.svg');
 
 $login-banner-image: none;
 $register-banner-image: none;

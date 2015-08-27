@@ -79,6 +79,7 @@ section.container.about{
 padding:0 30px!important;
 }
 
+
 /* the following two are for activating the current menu item with the javascript bellow*/
 .gnav li.active {
     background-color:#d5edf8;
@@ -86,7 +87,6 @@ padding:0 30px!important;
 .gnav li.active a {
     color:#1790c7;
     font-weight:bold;
-transition: all 0s;
 }
 
 
@@ -112,23 +112,12 @@ function setNavigation() {
 </script>
 
 
+
 <nav class="ngnav">
     <ul class="gnav">
-        <li><a href="${marketing_link('FOREAS')}">Ο φορέας</a></li>
+          <li><a href="${marketing_link('NEWS')}">Νέα</a></li>
 
-        <li><a href="${marketing_link('PLATFORMA')}">Η πλατφόρμα OpenEdX</a></li>
-         <li><a href="${marketing_link('AUTHORS')}">Οι "συγγραφείς"</a></li>
-        <li>
-            <a href="${marketing_link('PERSONEL')}">Το προσωπικό</a>
-<!--            <ul>
-                <li><a href="candy.html">Στέφανος Τραχανάς</a></li>
-                <li><a href="chocolate.html">Νίκος Γκικόπουλος</a></li>
-            </ul>-->
-        </li>
-        <li><a href="${marketing_link('FUNDS')}">Οι πόροι</a></li>
-        <li><a href="${marketing_link('VOLUNTEERS')}">Οι εθελοντές</a></li>
-        <li><a href="${marketing_link('INFRA')}">Οι "υποδομές"</a></li>
-        <li><a href="${marketing_link('RESEARCH')}">Εκπαιδευτική έρευνα</a></li>
+        <li><a href="${marketing_link('BLOG')}">Απόψεις</a></li>
     </ul>
 </nav>
 

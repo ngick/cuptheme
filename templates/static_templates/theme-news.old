@@ -1,0 +1,29 @@
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">Νέα</%block>
+
+
+
+<style>
+
+p.ngabout{
+    text-align:justify;
+    font-family:"Open Sans";
+}
+td.ngabout{
+ background-color: #E6F4FB;
+}
+td.ngabout2{
+padding:10px;
+width:100%;
+}
+table.ngabout{
+width:100%;
+}
+
+</style>
+<section class="container about">
+<h1>Νέα</h1>
+<p class="ngabout"></p>
+</section>

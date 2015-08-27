@@ -100,6 +100,7 @@ max-width:1200px;
 margin-left:auto;
 margin-right:auto;
 margin-top:0px;
+background-color:transparent;
 }
 
 .find-courses header.search, .university-profile header.search{
@@ -115,6 +116,8 @@ padding-top:150px;
 max-width:1200px;
 margin-left:auto;
 margin-right:auto;
+margin-top: 0px;
+padding-top: 80px;
 }
 .course-info header.course-profile .intro-inner-wrapper{
 max-width:95%;
@@ -130,9 +133,9 @@ max-width:95%;
 top:50px;
 transition: 1000000s;
 }a
-.highlighted-courses .courses .course .meta-info, .find-courses .courses .course .meta-info{
+/*.highlighted-courses .courses .course .meta-info, .find-courses .courses .course .meta-info{
 display:none;
-}
+}*/
 .highlighted-courses .courses .course .info .cover-image img, .find-courses .courses .course .info .cover-image img{
 min-height:auto;
 }
@@ -220,6 +223,17 @@ margin-right: 15px;
 .course-info header.course-profile .intro-inner-wrapper .intro > hgroup h1{
 font-size: 27px;
 }
+/*The following are for the about page*/
+.course-info header.course-profile .intro-inner-wrapper .intro .main-cta span.register, .course-info header.course-profile .intro-inner-wrapper .intro .main-cta span.add-to-cart{
+text-transform:none !important;
+}
+.course-info .container nav a, .course-info section.outside-app nav a{
+text-transform:none !important;
+
+}
+
+
+
 /*The following are for the color in footer */
 .wrapper-footer{
 background: white none repeat scroll 0% 0%!important; /*it was: background: #E3DDE4 none repeat scroll 0% */
@@ -231,6 +245,10 @@ float: right;
 .wrapper-footer footer .colophon {
 float: left;
 width: auto;
+}
+.wrapper-footer footer a:hover, .wrapper-footer footer a:focus, .wrapper-footer footer a:active{
+color: #0065a4;
+transition: 0.4s;
 }
 
 /* this is for popup windows the X wasn't working */
@@ -245,3 +263,57 @@ display:none;
 input[type="submit"], input[type="button"], button, .button{
   text-transform:none !important;
 }
+
+/*the following are for discusion*/
+.container .discussion-body .wmd-preview-label, .container .discussion-module .wmd-preview-label, .container .discussion-user-threads .wmd-preview-label{
+  text-transform:none !important;
+}
+.group-visibility-label{
+/*display:none; <-- do not display visible to everyone */
+}
+body.discussion .post-label-following:last-child, .discussion-module .post-label-following:last-child, .discussion-user-threads .post-label-following:last-child{
+ text-transform:none !important;
+
+}
+body.discussion .post-label-reported, .discussion-module .post-label-reported, .discussion-user-threads .post-label-reported{
+ text-transform:none !important;
+}
+.container .discussion-body .discussion-article h1, .container .discussion-module .discussion-article h1, .container .discussion-user-threads .discussion-article h1{
+font-weight:600!important;
+}
+/*the following are for tidy up survey xblock*/
+div.course-wrapper section.course-content ul li{
+margin-bottom:0;
+}
+
+ul.poll-answers, ul.poll-answers-results{
+max-width:95%;
+}
+
+.poll-answer-label{
+display:inline-block!important;
+}
+
+div.course-wrapper section.course-content p{
+margin-bottom:0;
+}
+
+
+/*the following are for not displaying course-status-processing certificates*/
+.dashboard .my-courses .message.is-shown{
+display:none;
+}
+/*the followin are for not displayng any date... course starts etc*/
+/*.course-info .details{
+width:98%!important;
+}
+.course-info .course-sidebar{
+display:none;
+}*/
+.dashboard .my-courses .course .info>hgroup .date-block{
+display:none;
+}
+.highlighted-courses .courses .course .info .bottom, .find-courses .courses .course .info .bottom{
+display:none;
+}
+
