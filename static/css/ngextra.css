@@ -70,7 +70,7 @@ overflow: hidden;
 
 /*the followin are for the startup screen the white box*/
 .home>header .outer-wrapper{
-padding: 190px 0px 0px!important;
+padding: 140px 0px 0px!important;
 width: 100%; /*this can be less and still centered*/
 max-width: 600px;
 min-width: 500px;
@@ -79,6 +79,10 @@ min-width: 500px;
   min-height: 0px;
   margin-left: 0px; /*exei na kanei me to pio katw .play-intro */
   width: 100%; /*not centered leave it 100%*/
+  background: none!important;
+  border: none;
+  box-shadow: none;
+
 }
 .home>header .title>hgroup {
 width: 100%; /*not centered leave it 100%*/
@@ -88,6 +92,11 @@ padding:20px 10px;
 .home>header .title>hgroup h1{
 text-align:center;
 font-size:25px;
+color: white; /*color text*/
+text-shadow: 0 1px rgba(21, 21, 21, 0.85);/*black shadow for white letters*/
+}
+.home>header .title>hgroup h2{
+color: white;
 }
 .home>header .media {
 /*  width:142px;
@@ -101,17 +110,32 @@ margin-left:auto;
 margin-right:auto;
 margin-top:0px;
 background-color:transparent;
+height: 360px;
 }
+.find-courses header.search .inner-wrapper.main-search h2{
+color:white;
+text-shadow: 0 1px rgba(21, 21, 21, 0.85);/*black shadow for white letters*/
 
+}
 .find-courses header.search, .university-profile header.search{
 max-width:1200px;
 margin-left:auto;
 margin-right:auto;
 margin-top:0px;
+height: 360px;
 }
 .find-courses header.search .inner-wrapper, .university-profile header.search .inner-wrapper{
 padding-top:150px;
 }
+.find-courses header.search .inner-wrapper>hgroup, .university-profile header.search .inner-wrapper>hgroup{
+box-shadow: none;
+background: none;
+border: none;
+}
+.find-courses header.search .inner-wrapper.main-search .logo, .find-courses header.search .inner-wrapper.university-search .logo, .university-profile header.search .inner-wrapper.main-search .logo, .university-profile header.search .inner-wrapper.university-search .logo{
+display: none; /*hide logo in search courses*/
+}
+
 .course-info header.course-profile{
 max-width:1200px;
 margin-left:auto;
