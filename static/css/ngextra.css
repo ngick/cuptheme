@@ -280,9 +280,9 @@ transition: 0.4s;
 z-index:20;
 }
 /*the following is for disapearing the name of the user and the ability to change the name*/
-li.info--username{
+/*li.info--username{
 display:none;
-}
+}*/
 /*the following is for correcting case in big buttons*/
 input[type="submit"], input[type="button"], button, .button{
   text-transform:none !important;

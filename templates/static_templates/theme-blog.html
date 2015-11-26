@@ -1,19 +1,104 @@
 <%! from django.utils.translation import ugettext as _ %>
 <%inherit file="../main.html" />
 
-<%block name="pagetitle">Απόψεις</%block>
+<%block name="pagetitle">Έγραψαν για μας.</%block>
 <section class="container about">
 
 <table class="ngabout">
 <tr><td class="ngabout"><%include file="menu-news.html"/></td>
 <td class="ngabout2">
 
+<style>
+.ngthumb{
+text-align:center;
+padding:2px;
+border-bottom:1px dotted;
+width:50px;
+padding-top:15px;
+padding-bottom:10px;
+}
+.ngimgthumb{
+max-width:100px;
+
+}
+.ngdesc{
+padding:2px;
+border-bottom:1px dotted;
+padding-top:10px;
+padding-bottom:10px;
+line-height:1.4em;
+}
+</style>
+
+<h1>Έγραψαν για μας</h1>
+
+<table>
+<tr><td class="ngthumb"><img src="/c4x/edX/DemoX/asset/vima.jpg" class="ngimgthumb"/></td>
+<td class="ngdesc"><a href="http://www.tovima.gr/science/article/?aid=755833" target="_blank">Τα ελληνικά πανεπιστήμια οnline</a><br/>
+	<b>Το Βήμα Science 22/11/2015 από τον Τάσο Καφαντάρη</b><br/><br/>
+«Γιατί ένας εκδοτικός οίκος - ένα university press - επενδύει σε μια πύλη Μαζικών Ανοιχτών Διαδικτυακών Μαθημάτων (MOOCs);» ρώτησα τον επικεφαλής του εγχειρήματος και πρόεδρο των Πανεπιστημιακών Εκδόσεων Κρήτης κ. Στέφανο Τραχανά.<br/>
+«Διότι τα διαδικτυακά μαθήματα είναι η νέα μορφή διδακτικού βιβλίου» μου απάντησε αφοπλιστικά.
+<a href="http://www.tovima.gr/science/article/?aid=755833" target="_blank">περισσότερα</a>
+</td></tr>
+
+<tr>
+ <td class="ngthumb"><img src="/c4x/edX/DemoX/asset/bookpress.jpg" class="ngimgthumb"/></td>
+ <td class="ngdesc">
+	<a href="http://www.bookpress.gr/politismos/teleutaia-nea/pek-mathesis" target="_blank">Mathesis για όλους και δωρεάν</a><br/>
+	<b>Bookpress 30/10/2015 από την Ελένη Κορόβηλα</b><br/><br/>
+        Οι Πανεπιστημιακές Εκδόσεις Κρήτης ανοίγονται στην δωρεάν εκπαίδευση εξ αποστάσεως με έξι κύκλους μαθημάτων, τρεις φυσικής και τρεις ιστορίας. 
+	<a href="http://www.bookpress.gr/politismos/teleutaia-nea/pek-mathesis" target="_blank">περισσότερα</a><br/>
+</td>
+</tr>
+
+<tr><td class="ngthumb"><img src="/c4x/edX/DemoX/asset/vima.jpg" class="ngimgthumb"/></td>
+<td class="ngdesc"><a href="http://www.tovima.gr/society/article/?aid=748492" target="_blank">Ηλεκτρονική «Mathesis» από την Κρήτη</a><br/>
+	<b>Το Βήμα 25/10/2015 από την Μάρνυ Παπαματθαίου</b><br/><br/>
+Δωρεάν προσφορά στους φοιτητές, στους επαγγελματίες επιστήμονες και στο ευρύτερο κοινό διαδικτυακών μαθημάτων. 	
+<a href="http://www.tovima.gr/society/article/?aid=748492" target="_blank">περισσότερα</a>
+</td></tr>
+
+<tr>
+ <td class="ngthumb"><img src="/c4x/edX/DemoX/asset/sintakton.jpg" class="ngimgthumb"/></td>
+ <td class="ngdesc">
+<a href="https://www.efsyn.gr/arthro/mathesis-otan-panepistimio-metakomizei-sto-diadiktyo" target="_blank">Mathesis, όταν το πανεπιστήμιο μετακομίζει στο διαδίκτυο</a><br/>
+<b>Εφημερίδα των Συντακτών 24/10/2015 από τον Σπύρο Μανουσέλη</b><br/><br/>
+Στα μέσα του επόμενου μήνα, και συγκεκριμένα στις 16-11-2015, θα ξεκινήσουν επίσημα οι δύο πρώτοι ελληνικοί κύκλοι των δωρεάν διαδικτυακών πανεπιστημιακών μαθημάτων του προγράμματος Mathesis.
+<a href="https://www.efsyn.gr/arthro/mathesis-otan-panepistimio-metakomizei-sto-diadiktyo" target="_blank">περισσότερα</a>
+</td>
+</tr>
 
 
-<h1>Απόψεις</h1>
+<tr>
+ <td class="ngthumb"><img src="/c4x/edX/DemoX/asset/ethnos.gif" class="ngimgthumb"/></td>
+ <td class="ngdesc">
+<a href="http://www.ethnos.gr/article.asp?catid=22768&subid=2&pubid=64271185" target="_blank">Οnline μαθήματα από τις Πανεπιστημιακές εκδόσεις Κρήτης</a><br/>
+	<b>Έθνος 17/10/2015 από τον Μανόλη Κοκολάκη</b><br/><br/>
+Διαδικτυακή Πανεπιστημιακή εκπαίδευση στα πρότυπα των κορυφαίων στον κόσμο Πανεπιστημίων του Χάρβαρντ και το MIT, ξεκινούν οι Πανεπιστημιακές Εκδόσεις Κρήτης.
+
+<a href="http://www.ethnos.gr/article.asp?catid=22768&subid=2&pubid=64271185" target="_blank">περισσότερα</a>
+</td>
+</tr>
+
+<tr><td class="ngthumb"><img src="/c4x/edX/DemoX/asset/tvxs.png" class="ngimgthumb"/></td>
+<td class="ngdesc">
+<a href="http://tvxs.gr/news/paideia/mathesis-dorean-diadiktyaka-mathimata-gia-oloys" target="_blank"/>Δωρεάν διαδικτυακά μαθήματα για όλους</a><br/>
+	<b>Tvxs 25/09/2015</b><br/><br/>
+Το Κέντρο Ανοικτών Διαδικτυακών Μαθημάτων Mathesis, ιδρύθηκε το 2015 ως ένα ιδιαίτερο τμήμα των Πανεπιστημιακών Εκδόσεων Κρήτης (ΠΕΚ) με αποκλειστικό σκοπό τη δημιουργία και δωρεάν προσφορά στους φοιτητές, τους επαγγελματίες επιστήμονες και το ευρύτερο κοινό, διαδικτυακών μαθημάτων στο επίπεδο των καλύτερων διεθνών προτύπων.
+<a href="http://tvxs.gr/news/paideia/mathesis-dorean-diadiktyaka-mathimata-gia-oloys" target="_blank"/>περισσότερα</a>
+	</td><tr>
+</table>
+
+<!--
+
+<tr>
+ <td class="ngthumb"><img src=""/></td>
+ <td class="ngdesc"><a href="" target="_blank"></a><br/></td>
+</tr>
+
 <p class="ngabout">Σε τούτο τον χώρο αναδημοσιεύονται ή δίνονται σύνδεσμοι στα πιο ενδιαφέροντα <i>άρθρα γνώμης</i> &mdash;ή <i>μελέτες</i>&mdash; για τα Μαζικά Ανοικτά ΔΙαδικτυακά Μαθήματα (ΜΑΔΙΜ ή MOOCs) και τις επιδράσεις τους (θετικές και αρνητικές) στην αναδυόμενη νέα εποχή της πανεπιστημιακής (και όχι μόνο) εκπαίδευσης.
 
-</p>
+</p>-->
 
 </td></tr></table>
 
