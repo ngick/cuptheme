@@ -1,7 +1,7 @@
 <%! from django.utils.translation import ugettext as _ %>
 <%inherit file="../main.html" />
 
-<%block name="pagetitle">Έγραψαν για μας.</%block>
+<%block name="pagetitle">Έγραψαν και είπαν για εμάς.</%block>
 <section class="container about">
 
 <table class="ngabout">
@@ -30,15 +30,53 @@ line-height:1.4em;
 }
 </style>
 
-<h1>Έγραψαν για μας</h1>
+<h1>Έγραψαν και είπαν για εμάς</h1>
 
 <table>
+
+<tr>
+ <td class="ngthumb"><img src="/c4x/edX/DemoX/asset/ΑΝΤ1.jpg" class="ngimgthumb"/></td>
+ <td class="ngdesc">
+<a href="http://www.antenna.gr/webtv/watch?cid=_ur3_d_k_i1l_s_y_m%3D" target="_blank">Ψηφιακή Πλατφόρμα "Mathesis"</a><br/>
+<b>Ant1 7/12/2015 με τη Μαρί Κυριακού</b><br/><br/>
+Η εκπομπή "Με Αγάπη" παρουσιάζει το Κέντρο Ανοικτών Διαδικτυακών Μαθημάτων, Mathesis. Πρόκειται για ένα κέντρο που απευθύνεται σε φοιτητές, άτομα του επιστημονικού κλάδου, αλλά και σε εκείνους που επιθυμούν να εμπλουτίσουν τις γνώσεις τους, διευρύνοντας τους πνευματικούς τους ορίζοντες.
+<a href="http://www.antenna.gr/webtv/watch?cid=_ur3_d_k_i1l_s_y_m%3D" target="_blank">περισσότερα</a>
+</td>
+</tr>
+
+<tr>
+ <td class="ngthumb"><img src="/c4x/edX/DemoX/asset/sintakton.jpg" class="ngimgthumb"/></td>
+ <td class="ngdesc">
+<a href="http://www.efsyn.gr/arthro/i-istoriki-paideia-os-antidoto-stin-krisi" target="_blank">Η ιστορική παιδεία ως αντίδοτο στην κρίση</a><br/>
+<b>Εφημερίδα των Συντακτών 30/11/2015 από τον Σπύρο Μανουσέλη</b><br/><br/>
+Tα δύο τελευταία χρόνια μια ομάδα τολμηρών Ελλήνων πανεπιστημιακών δασκάλων εργάστηκε σκληρά για να δημιουργήσει τα πρώτα ελληνικά «Ανοικτά Διαδικτυακά Μαθήματα». Αποτέλεσμα αυτής της προσπάθειας είναι το «Mathesis» 
+<a href="http://www.efsyn.gr/arthro/i-istoriki-paideia-os-antidoto-stin-krisi" target="_blank">περισσότερα</a>
+</td>
+</tr>
+<!--
+<tr>
+ <td class="ngthumb"><img src="/c4x/edX/DemoX/asset/kathimerini.jpg" class="ngimgthumb"/></td>
+ <td class="ngdesc">
+<a href="http://www.kathimerini.gr/840398/opinion/epikairothta/politikh/ryakia-sto-telma" target="_blank">Ρυάκια στο τέλμα</a><br/>
+<b>Καθημερινή της Κυριακής 29/11/2015 από τον Αρίστο Δοξιάδη</b><br/><br/>
+Στα εξαιρετικά διαδικτυακά μαθήματα που ανέπτυξαν τα κορυφαία πανεπιστήμια του κόσμου προστέθηκε πρόσφατα το πρόγραμμα mathesis των Πανεπιστημιακών Εκδόσεων Κρήτης, και είναι βέβαιο ότι θα υπάρξουν κι άλλα.
+<a href="http://www.kathimerini.gr/840398/opinion/epikairothta/politikh/ryakia-sto-telma" target="_blank">περισσότερα</a>
+</td>
+</tr>
+-->
+
 <tr><td class="ngthumb"><img src="/c4x/edX/DemoX/asset/vima.jpg" class="ngimgthumb"/></td>
 <td class="ngdesc"><a href="http://www.tovima.gr/science/article/?aid=755833" target="_blank">Τα ελληνικά πανεπιστήμια οnline</a><br/>
 	<b>Το Βήμα Science 22/11/2015 από τον Τάσο Καφαντάρη</b><br/><br/>
 «Γιατί ένας εκδοτικός οίκος - ένα university press - επενδύει σε μια πύλη Μαζικών Ανοιχτών Διαδικτυακών Μαθημάτων (MOOCs);» ρώτησα τον επικεφαλής του εγχειρήματος και πρόεδρο των Πανεπιστημιακών Εκδόσεων Κρήτης κ. Στέφανο Τραχανά.<br/>
 «Διότι τα διαδικτυακά μαθήματα είναι η νέα μορφή διδακτικού βιβλίου» μου απάντησε αφοπλιστικά.
 <a href="http://www.tovima.gr/science/article/?aid=755833" target="_blank">περισσότερα</a>
+</td></tr>
+
+<tr><td class="ngthumb"><img src="/c4x/edX/DemoX/asset/ert1.jpg" class="ngimgthumb"/></td>
+<td class="ngdesc"><a href="http://webtv.ert.gr/katigories/enimerosi/04noe2015-dorean-diadiktiaka-mathimata-gia-olous-apo-to-panepistimio-kritis/" target="_blank">Δωρεάν διαδικτυακά μαθήματα για όλους από τις Πανεπιστημιακές Εκδόσεις Κρήτης</a><br/>
+	<b>ΕΡΤ1 - Ενημέρωση με τη Μαριλένα Κασίμη και τον Γιάννη Δάρα 04/11/2015 από την Φανή Καλαθάκη</b><br/><br/>
+<a href="http://webtv.ert.gr/katigories/enimerosi/04noe2015-dorean-diadiktiaka-mathimata-gia-olous-apo-to-panepistimio-kritis/" target="_blank">περισσότερα</a>
 </td></tr>
 
 <tr>
@@ -80,6 +118,14 @@ line-height:1.4em;
 </td>
 </tr>
 
+<tr><td class="ngthumb"><img src="/c4x/edX/DemoX/asset/neakriti_.png" class="ngimgthumb"/></td>
+<td class="ngdesc">
+<a href="http://www.neakriti.gr/?page=newsdetail&DocID=1270717" target="_blank"/>Μαθήματα μέσω διαδικτύου από τις ΠΕΚ</a><br/>
+
+	<b>Νέα Κρήτη 3/10/2015 από τον Σταύρο Μουντουφάρη</b><br/><br/>
+Οι καιροί έχουν αλλάξει και μαζί ο τρόπος διδασκαλίας. Πλέον ο ρόλος των βιβλίων και της εκπαιδευτικής διαδικασίας είναι διαφορετικός, καθώς οι δυνατότητες που προσφέρει η νέα τεχνολογία μοιάζουν ασύλληπτες. Αρκεί να υπάρχουν άνθρωποι με όραμα, προοπτική και αγάπη για τη μάθηση.
+<a href="http://www.neakriti.gr/?page=newsdetail&DocID=1270717" target="_blank"/>περισσότερα</a>
+	</td><tr>
 <tr><td class="ngthumb"><img src="/c4x/edX/DemoX/asset/tvxs.png" class="ngimgthumb"/></td>
 <td class="ngdesc">
 <a href="http://tvxs.gr/news/paideia/mathesis-dorean-diadiktyaka-mathimata-gia-oloys" target="_blank"/>Δωρεάν διαδικτυακά μαθήματα για όλους</a><br/>
@@ -87,6 +133,7 @@ line-height:1.4em;
 Το Κέντρο Ανοικτών Διαδικτυακών Μαθημάτων Mathesis, ιδρύθηκε το 2015 ως ένα ιδιαίτερο τμήμα των Πανεπιστημιακών Εκδόσεων Κρήτης (ΠΕΚ) με αποκλειστικό σκοπό τη δημιουργία και δωρεάν προσφορά στους φοιτητές, τους επαγγελματίες επιστήμονες και το ευρύτερο κοινό, διαδικτυακών μαθημάτων στο επίπεδο των καλύτερων διεθνών προτύπων.
 <a href="http://tvxs.gr/news/paideia/mathesis-dorean-diadiktyaka-mathimata-gia-oloys" target="_blank"/>περισσότερα</a>
 	</td><tr>
+
 </table>
 
 <!--
