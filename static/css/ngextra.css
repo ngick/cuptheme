@@ -295,13 +295,10 @@ input[type="submit"], input[type="button"], button, .button{
 .group-visibility-label{
 /*display:none; <-- do not display visible to everyone */
 }
-body.discussion .post-label-following:last-child, .discussion-module .post-label-following:last-child, .discussion-user-threads .post-label-following:last-child{
+.post-label-following, .post-label-reported, .post-label-pinned, .post-label-by-staff{
  text-transform:none !important;
+}
 
-}
-body.discussion .post-label-reported, .discussion-module .post-label-reported, .discussion-user-threads .post-label-reported{
- text-transform:none !important;
-}
 .container .discussion-body .discussion-article h1, .container .discussion-module .discussion-article h1, .container .discussion-user-threads .discussion-article h1{
 font-weight:600!important;
 }
