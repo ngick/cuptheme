@@ -1,0 +1,65 @@
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">Έγραψαν και είπαν για εμάς.</%block>
+<section class="container about">
+
+<table class="ngabout">
+<tr><td class="ngabout"><%include file="menu-news.html"/></td>
+<td class="ngabout2">
+
+<style>
+.ngthumb{
+text-align:center;
+padding:2px;
+border-bottom:1px dotted;
+width:50px;
+padding-top:15px;
+padding-bottom:10px;
+}
+.ngimgthumb{
+max-width:100px;
+
+}
+.ngdesc{
+padding:2px;
+border-bottom:1px dotted;
+padding-top:10px;
+padding-bottom:10px;
+line-height:1.4em;
+}
+</style>
+
+<h1>Νέα - Απόψεις</h1>
+
+<table>
+
+<tr>
+ <td class="ngthumb"><img src="/static/themes/cuptheme/images/MLogo.svg" class="ngimgthumb"/></td>
+ <td class="ngdesc">
+<a href="/c4x/edx/demox/asset/Έκθεση_προόδου_Mathesis.pdf" target="_blank">Έξι μήνες Mathesis</a><br/>
+<b>Μάιος 2016</b><br/><br/>
+ΠΡΩΤΗ ΕΚΘΕΣΗ ΠΡΟΟΔΟΥ<br/><i>Συντάκτης:</i> Στέφανος Τραχανάς.
+<a href="/c4x/edx/demox/asset/Έκθεση_προόδου_Mathesis.pdf" target="_blank">περισσότερα</a>
+</td>
+</tr>
+
+<!--
+<tr>
+ <td class="ngthumb"><img src="/c4x/edx/demox/asset/kathimerini.png" class="ngimgthumb"/></td>
+ <td class="ngdesc">
+<a href="/c4x/edx/demox/asset/Έκθεση_προόδου_Mathesis.pdf" target="_blank">κβαντομηχανική και 1821 τα δύο νέα μαθήματα στη «σκηνή» του mathesis</a><br/>
+<b>η καθημερινή 18/03/2016 από τον απόστολο λακασά</b><br/><br/>
+δύο νέα διαδικτυακά μαθήματα του mathesis ξεκινούν αυτές τις ημέρες.
+<a href="http://www.kathimerini.gr/853423/article/epikairothta/ellada/kvantomhxanikh-kai-1821-ta-dyo-nea-ma8hmata-sth-skhnh-toy-mathesis" target="_blank">περισσότερα</a>
+</td>
+</tr>
+
+-->
+
+</table>
+
+</td></tr></table>
+
+</section>
+
